@@ -1,0 +1,30 @@
+## Overview
+This category refers to the identification and positional evaluation of critical care devices (lines and tubes) on a chest X-ray. For patients in the ICU, the chest X-ray is the fastest and most common way to confirm that these devices are correctly placed and have not caused a complication. The primary task is to check the *tip* of each device.
+
+## 1. Endotracheal Tube (ETT)
+* **What it is:** A breathing tube inserted through the mouth or nose into the trachea to secure an airway for mechanical ventilation.
+* **Correct Placement:** The tip of the ETT should be in the mid-trachea, approximately **3 to 7 cm above the carina**. The carina is the point where the trachea splits into the right and left main bronchi. A good rule of thumb is that the tip should be level with the aortic knob.
+* **Complications of Malposition:**
+    * **Too Low (Intubation of Bronchus):** This is the most common error. The tube's angle favors the right main bronchus. If the tube goes down the right bronchus, it will block air from the left lung, causing **total collapse (atelectasis) of the left lung**.
+    * **Too High:** If the tip is too high in the trachea, the cuff may damage the vocal cords. It also increases the risk of the tube being accidentally pulled out (extubation) when the patient moves their head.
+
+## 2. Central Venous Catheter (CVC)
+* **What it is:** A large IV catheter inserted into a major vein (typically the internal jugular, subclavian, or femoral) to administer medications, fluids, or monitor central venous pressure.
+* **Correct Placement:** The ideal tip position is in the **lower third of the superior vena cava (SVC)**, just superior to (outside of) the right atrium.
+* **Complications of Malposition:**
+    * **In the Right Atrium/Ventricle:** If the tip is advanced too far and sits inside the heart, it can irritate the heart wall and cause life-threatening **cardiac arrhythmias (abnormal heart rhythms)** or even perforate the heart.
+    * **In the Wrong Vein:** The catheter can be accidentally advanced up into the internal jugular vein in the neck or across into the opposite subclavian vein, which will cause inaccurate pressure readings and potential thrombosis.
+    * **Pneumothorax:** A CVC insertion (especially subclavian) is a common cause of **iatrogenic pneumothorax** (lung puncture). The X-ray must also be checked for this complication.
+
+## 3. Nasogastric (NG) Tube
+* **What it is:** A tube passed through the nose, down the esophagus, and into the stomach for feeding or suctioning stomach contents.
+* **Correct Placement:** The tip of the tube must be clearly visible **in the stomach**, at least 10 cm below the gastroesophageal (GE) junction (where the esophagus meets the stomach).
+* **Complications of Malposition:**
+    * **In the Lung:** This is a critical, life-threatening error. The tube can be accidentally passed into the trachea and down into a bronchus. If this is not recognized *before* feeding is started, it will cause **severe aspiration pneumonia** and chemical pneumonitis.
+
+## Recent Research (2023-2024)
+Given the high risk of malpositioned devices, a major area of AI research is the automated detection and assessment of support devices. 2023 and 2024 studies (e.g., in the *Journal of Critical Care* and *European Journal of Radiology*) have shown that AI models can be trained to:
+1.  Automatically detect the presence of ETTs, CVCs, and NG tubes.
+2.  Segment the device and pinpoint its tip.
+3.  Measure the ETT-to-carina distance or identify if a CVC tip is in the right atrium.
+The goal of this technology is not to replace radiologists, but to act as an immediate "second read" in the ICU, flagging potential life-threatening malpositions in real-time for immediate human correction.

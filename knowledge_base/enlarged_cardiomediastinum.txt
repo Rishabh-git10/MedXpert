@@ -1,0 +1,35 @@
+## Overview
+An "enlarged cardiomediastinum," or "widened mediastinum," is a critical finding on a chest X-ray. It is not a diagnosis but a sign that the structures in the center of the chest (the mediastinum) are abnormally wide. The mediastinum contains the heart, the great blood vessels (aorta, vena cava), the trachea, and lymph nodes.
+
+A wide mediastinum (often defined as >8 cm on a standard PA chest film) is a potential medical emergency because it can be the *only* initial sign of a life-threatening **aortic dissection** or **traumatic aortic injury**.
+
+## Diagnosis: True vs. False Widening
+The most common "cause" of a widened mediastinum is not a true pathology, but a **technical artifact** from a non-ideal X-ray.
+
+* **Apparent Widening (False/Benign):**
+    * **AP Projection:** An Anteroposterior (AP) chest X-ray, common for portable or bed-bound patients, naturally magnifies the heart and mediastinum, making them look falsely wide. A standard Posteroanterior (PA) view is required for accurate measurement.
+    * **Patient Rotation:** If the patient is rotated, the mediastinum can appear artificially widened.
+    * **Other Benign Causes:** Patient body fat (mediastinal lipomatosis) or a low inspiratory effort can also make the mediastinum appear wide.
+
+* **True Widening (Pathologic):**
+    If the widening is real, it is considered a serious finding. The differential diagnosis is broad and is split into acute (emergency) and chronic causes.
+
+## Acute (Emergency) Causes
+In a patient with trauma or sudden, severe chest pain, a widened mediastinum is a "can't-miss" sign for:
+* **Traumatic Aortic Injury:** A tear in the aorta, typically from a high-speed deceleration injury (e.g., car crash, fall from height). This is fatal if not diagnosed and surgically repaired immediately.
+* **Aortic Dissection:** A tear in the inner lining of the aorta, allowing blood to "dissect" between the layers of the aortic wall. This is a life-threatening vascular emergency.
+* **Mediastinal Hematoma:** Bleeding into the mediastinum, often from trauma or a medical procedure.
+
+## Chronic (Non-Emergency) Causes
+If found incidentally in a stable patient, the causes are more likely:
+* **Thoracic Aortic Aneurysm (TAA):** A chronic, balloon-like dilation of the aorta.
+* **Tumors (Neoplasms):** Lymphoma is the most common mediastinal mass. Other causes include thymomas, thyroid goiters, or germ cell tumors.
+* **Lymphadenopathy:** Swelling of the mediastinal lymph nodes, often due to infection (like Tuberculosis), inflammation (like Sarcoidosis), or metastatic cancer.
+
+## Standard Management
+The management pathway is dictated entirely by the clinical context.
+* **In a Trauma Patient:** A widened mediastinum on a chest X-ray is a direct, immediate indication for a **contrast-enhanced CT Angiogram (CTA)** of the chest. This is the gold standard test to definitively rule out or confirm a traumatic aortic injury.
+* **In a Stable, Non-Trauma Patient:** The patient is referred for a routine **contrast-enhanced CT scan** to evaluate the mediastinal structures and differentiate between an aneurysm, a tumor, or lymph nodes.
+
+## Recent Research (2023)
+Recent radiological reviews (2023) re-emphasize that the **AP projection is the most common mimicker** of a true widened mediastinum. The 2023 *Journal of Clinical Medicine* review on traumatic aortic injury reinforces that while a chest X-ray is a useful *screening* tool, it is not sensitive enough to *rule out* an injury. Therefore, in any patient with a high-impact trauma mechanism, a **CTA scan is mandatory**, even if the mediastinum on the chest X-ray looks normal.

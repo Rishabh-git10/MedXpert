@@ -1,0 +1,38 @@
+## Overview
+A "lung opacity" or "pulmonary infiltrate" is a non-specific radiological term. It simply describes an area on a chest X-ray that appears "whiter" or "denser" than the surrounding normal, air-filled lung tissue. It indicates that the alveoli (air sacs) are filled with a substance instead of air, such as fluid, pus, blood, or cells, or that the lung interstitium (the tissue framework) is thickened.
+
+Identifying an opacity is the *starting point* of diagnosis. The next step is to classify the *pattern* of the opacity and combine it with the clinical context (e.g., acute fever vs. chronic cough) to determine the underlying cause.
+
+## Diagnosis: Differentiating Opacity Patterns
+The management of a lung opacity depends entirely on its pattern and cause.
+
+* **1. Consolidation (Alveolar Opacity):**
+    * **X-ray Appearance:** A dense, cloud-like, and "fluffy" opacity that obscures the underlying blood vessels. A key sign is the presence of **"air bronchograms,"** which are dark, air-filled airways visible against the white, fluid-filled lung.
+    * **Pathology:** The alveoli are completely filled with pus, fluid, or blood.
+    * **Common Causes (Acute):** **Pneumonia** (pus), **Pulmonary Edema** (fluid/water), **Pulmonary Hemorrhage** (blood).
+
+* **2. Ground-Glass Opacity (GGO):**
+    * **X-ray Appearance:** A hazy, "see-through" opacity. It is less dense than consolidation, and the underlying blood vessels are *still visible* through the haze.
+    * **Pathology:** The alveoli are only *partially* filled, or the interstitial tissue is thickened.
+    * **Common Causes (Acute):** Early **Pneumonia**, **Pulmonary Edema**, or viral infections.
+
+* **3. Linear / Atelectatic Opacity:**
+    * **X-ray Appearance:** A linear, streaky, or band-like opacity. It is often associated with a *loss of lung volume*, which can pull the diaphragm up or the trachea toward the affected side.
+    * **Pathology:** Collapse of lung tissue.
+    * **Common Causes:** **Atelectasis**, most commonly from post-operative shallow breathing or a mucus plug.
+
+* **4. Nodular or Mass Opacity:**
+    * **X-ray Appearance:** A distinct, round, or "coin-like" opacity. A "nodule" is < 3 cm, and a "mass" is > 3 cm.
+    * **Pathology:** A focal growth or inflammation.
+    * **Common Causes:** **Lung Lesion** (which could be a benign granuloma or a malignant tumor), septic emboli (many small nodules).
+
+## Management Approach
+The treatment is targeted at the specific cause identified by the pattern and clinical picture.
+* If the opacity is a **consolidation** with **fever and cough**, the diagnosis is **Pneumonia**, and the management is **antibiotics**.
+* If the opacity is a **bilateral, central "batwing" consolidation** with **shortness of breath**, the diagnosis is **Pulmonary Edema**, and the management is **diuretics and vasodilators**.
+* If the opacity is **linear** in a **post-operative patient**, the diagnosis is **Atelectasis**, and the management is **chest physiotherapy**.
+
+## Recent Research (2023)
+A 2023 review in *Radiographics* emphasizes this systematic, pattern-based approach. The key insight for clinicians is that **combining the pattern with the time course** (acute vs. chronic) is the most effective diagnostic strategy.
+* **Acute Opacities** (hours to days), especially bilateral consolidations or GGOs, are overwhelmingly likely to be **Pneumonia** or **Pulmonary Edema**.
+* **Chronic Opacities** (weeks to months), especially focal ground-glass nodules or masses, require a different pathway to rule out **malignancy (cancer)** or chronic infections.

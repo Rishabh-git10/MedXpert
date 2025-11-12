@@ -1,0 +1,44 @@
+## Overview
+Pulmonary edema is the abnormal accumulation of fluid in the interstitial and alveolar spaces of the lungs. This buildup impairs gas exchange, leading to respiratory distress and hypoxemia. It is a critical, life-threatening condition that requires rapid diagnosis and intervention. Pulmonary edema is broadly classified into two main categories: cardiogenic (caused by heart problems) and non-cardiogenic (caused by other factors).
+
+## Diagnosis and Causes: Cardiogenic Pulmonary Edema
+Cardiogenic pulmonary edema (CPE) is the most common type. It is caused by an increase in pulmonary capillary hydrostatic pressure (a backup of pressure from the heart). This is nearly always a result of left-sided heart failure.
+
+* **Common Causes:** Acute myocardial infarction (heart attack), severe hypertension, acute exacerbation of chronic heart failure, and severe heart valve problems (like mitral regurgitation or aortic stenosis).
+* **Clinical Signs:** Patients often have a history of cardiac disease. Key symptoms include severe shortness of breath (especially when lying flat, known as orthopnea), coughing up pink, frothy sputum, wheezing, and bilateral leg swelling. An S3 gallop heart sound is common.
+* **Radiographic (X-ray) Findings:** A chest X-ray is a primary diagnostic tool. Findings typically include:
+    * **Cardiomegaly** (an enlarged heart).
+    * **Pulmonary vascular congestion** and redistribution to the upper lobes.
+    * **Bilateral, central "batwing" or "butterfly" pattern** of alveolar edema.
+    * **Kerley B lines** (septal lines).
+    * **Pleural effusions** (fluid around the lungs).
+* **Lab Tests:** Elevated B-type natriuretic peptide (BNP) levels (e.g., >500 pg/ml) strongly suggest a cardiogenic cause.
+
+## Diagnosis and Causes: Non-Cardiogenic Pulmonary Edema
+Non-cardiogenic pulmonary edema (NCPE) is caused by an increase in the permeability (leakiness) of the pulmonary capillaries, *not* by a backup of heart pressure. This allows fluid and proteins to leak into the lung tissue.
+
+* **Common Causes:** The most recognized form is **Acute Respiratory Distress Syndrome (ARDS)**. ARDS is triggered by a severe underlying inflammatory process, such as:
+    * **Sepsis** (severe infection).
+    * **Pneumonia** (severe lung infection).
+    * **Aspiration** of stomach contents.
+    * **Severe trauma** or blood transfusions (TRALI).
+* **Clinical Signs:** Patients are typically critically ill with a clear inflammatory cause. They show severe hypoxemia that is *refractory* to high levels of oxygen.
+* **Radiographic (X-ray) Findings:**
+    * **Bilateral, patchy, or peripheral infiltrates** (opacities).
+    * **Absence of cardiomegaly** (heart size is usually normal).
+    * **Absence of pleural effusions**.
+* **Lab Tests:** BNP levels are typically low (e.g., <100 pg/ml).
+
+## Standard Management
+Management depends entirely on the cause.
+* **Cardiogenic Edema:** The goal is to reduce fluid and decrease the workload on the heart.
+    1.  **Oxygen:** Supplemental oxygen to maintain saturation >92%.
+    2.  **Ventilation:** Non-invasive ventilation (CPAP or BiPAP) is highly effective at pushing fluid out of the alveoli and improving oxygenation.
+    3.  **Diuretics:** IV loop diuretics (e.g., Furosemide) to remove excess fluid from the body.
+    4.  **Vasodilators:** Nitroglycerin (sublingual or IV) to reduce preload and afterload on the heart, decreasing congestion.
+* **Non-Cardiogenic Edema (ARDS):** The goal is to treat the underlying cause (e.g., antibiotics for sepsis) and support the lungs.
+    1.  **Mechanical Ventilation:** These patients often require intubation and mechanical ventilation with a lung-protective strategy (low tidal volumes).
+    2.  **Supportive Care:** Managing the underlying condition (e.g., sepsis, pancreatitis) is the primary treatment.
+
+## Recent Research (2024-2025)
+Recent 2024-2025 guidelines and reviews emphasize the critical role of rapid, early diagnosis to differentiate between cardiogenic and non-cardiogenic causes. The major innovation is the widespread adoption of **bedside lung ultrasound (LUS)** in the emergency department. LUS has been shown to be faster and, in some cases, more accurate than a chest X-ray at identifying pulmonary edema. The presence of "B-lines" on ultrasound is a direct sign of fluid in the lung interstitium, allowing for diagnosis and initiation of treatment *before* the X-ray is even taken.

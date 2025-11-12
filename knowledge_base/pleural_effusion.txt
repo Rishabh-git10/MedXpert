@@ -1,0 +1,45 @@
+## Overview
+A pleural effusion is an abnormal, excessive collection of fluid in the pleural space—the thin area between the lung and the chest wall. Like edema, a pleural effusion is a *sign* of an underlying disease, not a disease itself. The fluid can be a clear, watery fluid (transudate) or a protein-rich, inflammatory fluid (exudate). Identifying which type of fluid is present is the most critical step in diagnosis.
+
+## Diagnosis and Causes
+**Radiographic (X-ray) Findings:**
+On an upright chest X-ray, a pleural effusion typically appears as a "blunting" or "rounding" of the sharp costophrenic angle (the corner where the diaphragm meets the ribs). As the fluid (at least 200-500 mL) accumulates, it forms a concave-up shape known as a "meniscus sign." A lateral decubitus X-ray (patient lying on their side) or, more commonly, a **thoracic ultrasound** is far more sensitive and can detect as little as 50-100 mL of fluid. Ultrasound is now the standard for guiding needle placement for drainage.
+
+**Diagnostic Procedure: Thoracentesis**
+A needle is inserted into the pleural space to drain a sample of the fluid. This fluid is sent to the lab to be analyzed using **Light's Criteria** to classify it as transudative or exudative.
+
+**Light's Criteria:**
+The fluid is an **EXUDATE** if it meets *any* of the following:
+1.  Fluid Protein / Serum Protein Ratio > 0.5
+2.  Fluid LDH / Serum LDH Ratio > 0.6
+3.  Fluid LDH > 2/3 the upper limit of normal serum LDH
+
+If it meets *none* of these, it is a **TRANSUDATE**.
+
+**Causes of Transudative Effusion (Systemic/Pressure Issues):**
+A transudate is caused by a systemic problem outside the lung, typically due to high hydrostatic pressure (fluid being pushed out) or low oncotic pressure (not enough protein to hold fluid in).
+* **Congestive Heart Failure (CHF):** The most common cause of transudate.
+* **Cirrhosis (Liver Failure):** Low albumin production.
+* **Nephrotic Syndrome (Kidney Failure):** Loss of protein in the urine.
+* **Pericardial Disease:** Constriction around the heart.
+
+**Causes of Exudative Effusion (Local/Inflammatory Issues):**
+An exudate is caused by inflammation or disease of the lung or pleura itself, which makes the capillaries leaky.
+* **Pneumonia (Parapneumonic Effusion):** An infection of the lung that spreads to the pleural space. If it becomes infected pus, it is called an empyema.
+* **Malignancy (Cancer):** The most common causes are lung cancer, breast cancer, and lymphoma. This is called a malignant pleural effusion.
+* **Pulmonary Embolism:** A blood clot in the lung.
+* **Tuberculosis (TB):** A common cause in endemic areas.
+
+## Standard Management
+The first step is always to **treat the underlying cause** (e.g., diuretics for heart failure, antibiotics for pneumonia).
+
+* **Therapeutic Thoracentesis (Drainage):** If an effusion is large and causing symptoms (like shortness of breath or dyspnea), a larger volume of fluid is drained to relieve the symptoms.
+* **Parapneumonic Effusions/Empyema:** Require immediate drainage via a chest tube in addition to antibiotics.
+* **Malignant Pleural Effusions (MPE):** Management is palliative. For recurrent, symptomatic effusions, the standard treatment is either:
+    1.  **Pleurodesis:** A chemical (like talc) is inserted into the space to "stick" the lung to the chest wall and prevent fluid from re-accumulating.
+    2.  **Indwelling Pleural Catheter (IPC):** A semi-permanent catheter is placed to allow the patient to drain the fluid themselves at home.
+
+## Recent Research (2024)
+Modern (2024) management guidelines for pleural effusions, especially malignant pleural effusions (MPE), have seen a significant shift.
+* **Ultrasound:** The 2024 JAMA review emphasizes that point-of-care ultrasound is now the gold standard for both diagnosis (detecting effusions) and safety (guiding thoracentesis) to minimize complications like pneumothorax.
+* **Malignant Effusions:** The "Modern management of malignant pleural effusions" (Eur. Resp. Review, 2024) confirms a major practice change. For MPE, **Indwelling Pleural Catheters (IPCs)** are now recommended as a **first-line therapy**, often *instead of* talc pleurodesis. The "Ambulatory-First" strategy, where an IPC is placed, allows patients to manage their symptoms at home, significantly reducing hospital days and improving quality of life. Pleurodesis is now often reserved for patients who fail or cannot manage an IPC.

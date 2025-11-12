@@ -1,0 +1,49 @@
+Overview
+Community-acquired pneumonia (CAP) is an acute infection of the pulmonary parenchyma acquired outside of a hospital or healthcare setting. It is a common and potentially serious illness, especially in older adults and those with comorbidities. The diagnosis is typically made by the presence of a new pulmonary infiltrate on chest radiography combined with clinical symptoms such as cough, fever, sputum production, and pleuritic chest pain.
+
+Diagnosis and Evaluation
+Diagnosis is based on clinical features and a new infiltrate on a chest radiograph. Key clinical features include fever, cough, sputum production, and pleuritic chest pain. Physical examination may reveal tachypnea, tachycardia, rales, or signs of consolidation.
+
+Severity Assessment (CURB-65): The CURB-65 score is used to stratify mortality risk and determine the treatment setting (outpatient vs. inpatient vs. ICU).
+
+C - Confusion (new disorientation)
+
+U - Urea (BUN > 20 mg/dL or 7 mmol/L)
+
+R - Respiratory Rate (>= 30 breaths/min)
+
+B - Blood Pressure (Systolic < 90 mmHg or Diastolic <= 60 mmHg)
+
+65 - Age (>= 65 years)
+
+Scoring:
+
+0-1 points: Low severity, consider outpatient treatment.
+
+2 points: Moderate severity, consider hospital admission.
+
+3-5 points: High severity, manage in-hospital; consider ICU admission if score is 4-5.
+
+Management by Severity
+Low-Severity (Outpatient):
+
+No comorbidities: Amoxicillin (1g 3x daily) OR Doxycycline OR a Macrolide (Azithromycin 500mg on day 1, then 250mg daily).
+
+With comorbidities (e.g., heart, lung, or liver disease): Combination therapy with Amoxicillin/clavulanate PLUS a Macrolide or Doxycycline, OR Monotherapy with a respiratory fluoroquinolone (e.g., Levofloxacin 750mg daily).
+
+Moderate-Severity (Inpatient, non-ICU):
+
+Standard: Beta-lactam (e.g., Ceftriaxone 1-2g IV daily) PLUS a Macrolide (e.g., Azithromycin 500mg IV daily).
+
+Alternative: Respiratory fluoroquinolone monotherapy.
+
+High-Severity (ICU Admission):
+
+Standard: Beta-lactam (Ceftriaxone) PLUS a Macrolide (Azithromycin).
+
+If Pseudomonas risk: Use an anti-pseudomonal beta-lactam (e.g., Piperacillin-tazobactam, Cefepime, or Meropenem) PLUS a fluoroquinolone (Ciprofloxacin or Levofloxacin).
+
+Recent Research (2024-2025)
+Recent 2024-2025 clinical guidelines emphasize the importance of lung ultrasound (LUS) in diagnosing CAP, finding it has a higher diagnostic accuracy than chest radiography in some settings. Furthermore, recent studies on antibiotic duration suggest that for most non-severe CAP, a 5-day course of antibiotics is non-inferior to longer 7- or 10-day courses, promoting antibiotic stewardship.
+
+Reference (StatPearls, 2024): https://www.ncbi.nlm.nih.gov/books/NBK430749/ Reference (ATS Guideline, 2025): https://pubmed.ncbi.nlm.nih.gov/40679934/

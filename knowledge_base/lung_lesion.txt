@@ -1,0 +1,48 @@
+## Overview
+A "lung lesion" typically refers to a **Solitary Pulmonary Nodule (SPN)**, which is a discrete, round opacity in the lung that is 3 cm (30 mm) or less in diameter. A lesion larger than 3 cm is defined as a "lung mass" and is treated as malignant (cancerous) until proven otherwise.
+
+SPNs are very common and are often found incidentally on CT scans. While the vast majority (over 95%) of small nodules are benign (e.g., old scars, granulomas), the primary goal of management is to determine if a nodule is malignant (lung cancer).
+
+## Diagnosis: Risk Stratification
+The entire diagnostic process is based on **risk stratification**. This involves assessing two key areas: patient risk and nodule characteristics.
+
+**1. Patient Risk Factors:**
+* **High Risk:** Advanced age, heavy smoking history, personal or family history of lung cancer, exposure to asbestos.
+* **Low Risk:** Younger than 35, non-smoker, no other risk factors.
+
+**2. Nodule Characteristics (on CT Scan):**
+* **Size:** This is the most important factor.
+    * `< 6 mm`: Very low risk of malignancy.
+    * `8-20 mm`: Intermediate risk (33-64% malignant).
+    * `> 20 mm`: High risk (64-82% malignant).
+* **Density:**
+    * **Solid:** A dense, uniform nodule.
+    * **Subsolid (Ground-Glass):** A hazy, see-through nodule. A persistent subsolid nodule has a *higher* chance of being malignant (typically a slow-growing adenocarcinoma) than a small solid nodule.
+* **Borders:**
+    * **Benign:** Smooth, well-defined borders.
+    * **Malignant:** Irregular, "spiculated" (spiky), or "lobulated" borders are highly suspicious.
+* **Calcification:**
+    * **Benign:** Specific patterns like central, laminated (onion-skin), or "popcorn" (hamartoma) calcification are definitive signs of a benign nodule.
+* **Growth Rate:**
+    * **Benign:** A solid nodule that has been stable (unchanged in size) for **2 years** is considered benign and requires no further follow-up.
+    * **Malignant:** Cancers grow. Any new growth on a follow-up CT is suspicious.
+
+## Management: The Fleischner Society Guidelines
+Management is a step-by-step process based on nodule size, density, and patient risk.
+
+* **For Low-Risk Patients, Solid Nodules:**
+    * `< 6 mm`: No routine follow-up is recommended.
+    * `6-8 mm`: A single follow-up CT scan at 6-12 months is considered to ensure stability.
+    * `> 8 mm`: Follow-up at 3 months, or consider a PET/CT scan or biopsy.
+
+* **For High-Risk Patients, Solid Nodules:**
+    * `< 6 mm`: A follow-up CT at 12 months may be considered.
+    * `6-8 mm`: Initial follow-up at 6-12 months, and if stable, another at 18-24 months.
+    * `> 8 mm`: High suspicion. Requires a 3-month follow-up CT, a **PET/CT scan** (to check for metabolic activity), or a **biopsy** (tissue sampling).
+
+* **For Subsolid Nodules (Ground-Glass or Part-Solid):**
+    * These have different rules because they are often slow-growing adenocarcinomas.
+    * They require a longer follow-up period, often **up to 5 years**, to confirm stability. Any growth or development of a new solid component is highly suspicious and requires biopsy or resection.
+
+## Recent Research (2022-2024)
+The **2017 Fleischner Society Guidelines** remain the undisputed standard of care for managing incidental nodules. Recent reviews in *JAMA* (2022) and *American Family Physician* (2023) have reinforced this risk-based, serial-CT follow-up approach. The key innovation is not a change in the guidelines, but the increasing use of **AI and quantitative models** to more accurately calculate a nodule's "probability of malignancy", helping clinicians make better decisions within the Fleischner framework.

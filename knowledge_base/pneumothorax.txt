@@ -1,0 +1,30 @@
+## Overview
+A pneumothorax is the presence of air in the pleural space (the area between the lung and the chest wall). This collection of air puts pressure on the lung, causing it to collapse partially or completely. A pneumothorax can range from a small, self-resolving issue to a life-threatening medical emergency.
+
+A **Tension Pneumothorax** is the most dangerous variant. This occurs when air enters the pleural space during inhalation but cannot escape during exhalation (a "one-way valve" effect). This causes a rapid, progressive buildup of air that not only collapses the lung but also pushes the heart, trachea, and great vessels to the opposite side (a "mediastinal shift"). This shift kinks the great veins, stops blood from returning to the heart, and causes cardiovascular collapse and death if not treated immediately.
+
+## Diagnosis and Causes
+**Radiographic (X-ray) Findings:**
+* **Simple Pneumothorax:** The key finding on an upright chest X-ray is the **visceral pleural line**—a thin, white line representing the edge of the collapsed lung. There are no lung markings (blood vessels) visible beyond this line, just black air.
+* **Tension Pneumothorax:** This is a clinical diagnosis, but on X-ray, it shows a large pneumothorax with **contralateral mediastinal shift** (the heart is pushed to the other side) and **ipsilateral diaphragmatic depression** (the diaphragm is pushed down).
+
+**Types and Causes:**
+1.  **Spontaneous Pneumothorax:** Occurs without trauma.
+    * **Primary Spontaneous (PSP):** Occurs in people with no underlying lung disease. It's most common in tall, thin, young men, often due to the rupture of tiny, subpleural "blebs."
+    * **Secondary Spontaneous (SSP):** Occurs in people with known lung disease, most commonly **COPD**, cystic fibrosis, or tuberculosis. These are more dangerous as the patient has less healthy lung reserve.
+2.  **Traumatic Pneumothorax:** Caused by an injury to the chest, such as a rib fracture that punctures the lung or a penetrating wound.
+3.  **Iatrogenic Pneumothorax:** Caused by a medical procedure. This is a known complication of central line placement (subclavian or internal jugular), lung biopsies, or mechanical ventilation.
+
+## Standard Management
+Treatment depends on the size, type, and patient's stability.
+* **Observation:** A small, stable primary spontaneous pneumothorax (PSP) can be managed with observation and supplemental oxygen, which helps speed up the resorption of the pleural air.
+* **Needle Aspiration:** A needle and syringe are inserted into the chest to manually draw out the air. This is often the first step for a larger PSP.
+* **Chest Tube (Thoracostomy):** This is the standard treatment for large, traumatic, or secondary (SSP) pneumothoraces. A tube is inserted into the chest and connected to a one-way valve or water seal to continuously drain the air and allow the lung to re-expand.
+* **Immediate Decompression:** For a **tension pneumothorax**, this is an emergency. A large-bore needle is immediately inserted into the 2nd intercostal space (mid-clavicular line) to "decompress" the chest and release the trapped air, converting it into a simple pneumothorax. A chest tube is then placed.
+* **Pleurodesis:** For patients with recurrent pneumothoraces, a procedure (often surgical VATS) is performed to "stick" the lung to the chest wall (using talc or mechanical abrasion) to prevent future collapse.
+
+## Recent Research (2023-2025)
+The 2025 Global Thoracic Endoscopy guidelines and other recent studies (J. of Thoracic Disease, 2023) show a significant shift in management.
+* **Minimally Invasive First:** For both primary and secondary spontaneous pneumothorax, there is a strong trend *away* from large-bore surgical chest tubes.
+* **Pigtail Catheters:** Small-bore **pigtail catheters** (which are less painful and easier to insert) are now recommended as the first-line intervention for simple drainage. Studies show they are just as effective as large tubes but with lower pain and complication rates.
+* **Ambulatory Devices:** For stable PSP, **ambulatory one-way valves** (like the Heimlich valve) are increasingly used. These devices attach to the pigtail catheter and allow the patient to be discharged from the emergency department and manage their pneumothorax at home, drastically reducing hospital stays.

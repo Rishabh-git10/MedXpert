@@ -1,0 +1,28 @@
+## Overview
+Cardiomegaly, or an enlarged heart, is not an independent disease but a sign of another underlying condition. It is most often identified on a chest radiograph, where it is indicated by a cardiothoracic ratio (the widest transverse diameter of the heart compared to the widest internal diameter of the chest) greater than 0.50. The enlargement can be due to hypertrophy (thickening of the heart muscle) or dilation (stretching or widening of the heart chambers). This enlargement can make the heart a less effective pump, which is a common precursor to and symptom of heart failure.
+
+## Diagnosis and Key Causes
+Diagnosis is initiated by a chest X-ray and confirmed with an echocardiogram, which can measure the chamber sizes, wall thickness, and ejection fraction (pumping ability). The investigation must then focus on identifying the underlying cause.
+
+Common causes include:
+* **Hypertension (High Blood Pressure):** This is the most common cause. Chronic high blood pressure forces the left ventricle to pump harder, leading to left ventricular hypertrophy (thickening) as the muscle compensates.
+* **Coronary Artery Disease (CAD):** Blockages in the heart's arteries can lead to a heart attack (myocardial infarction), which damages and scars the heart muscle. The remaining healthy muscle may dilate and work harder to compensate.
+* **Valvular Heart Disease:** Conditions like aortic stenosis (narrowing) or mitral regurgitation (leaking) force the heart to pump against higher pressure or handle more blood volume, leading to hypertrophy and dilation.
+* **Cardiomyopathy:** This is a diverse group of diseases directly affecting the heart muscle.
+    * **Dilated Cardiomyopathy (DCM):** Often idiopathic (unknown cause), genetic, or caused by toxins (like alcohol) or infections (viral myocarditis). The chambers stretch and weaken.
+    * **Hypertrophic Cardiomyopathy (HCM):** A common genetic condition where the heart muscle becomes abnormally thick.
+* **Pulmonary Hypertension:** High blood pressure in the lungs forces the *right* side of the heart to work harder, leading to right-sided enlargement.
+
+## Standard Management
+Treatment is not for the cardiomegaly itself, but for the root cause.
+* **For Hypertension:** Management involves lifestyle changes (low-salt diet) and medications like ACE inhibitors, ARBs, beta-blockers, or calcium channel blockers.
+* **For Heart Failure:** Treatment includes diuretics (to remove excess fluid), ACE inhibitors/ARBs/ARNIs (to reduce strain), and beta-blockers (to slow the heart rate and improve function).
+* **For Valvular Disease:** This may require surgical intervention, such as valve repair or replacement.
+* **For Cardiomyopathy:** Treatment depends on the type and may involve medications, septal ablation (for HCM), or in severe cases, a heart transplant.
+
+## Recent Research (2024)
+Recent 2024 genetic and molecular research has focused heavily on dilated cardiomyopathy (DCM), a primary driver of cardiomegaly. Studies have identified numerous genetic variants, particularly in the titin (TTN) gene, that are responsible for a significant portion of DCM cases. This is shifting the paradigm from "one-size-fits-all" heart failure management to personalized medicine. Clinical trials are now underway for gene-specific therapies, including antisense oligonucleotide (ASO) therapies that aim to correct the faulty gene expression in TTN-related DCM, representing a move toward treating the root genetic cause rather than just the symptoms.
+
+**Reference (Foundational):** Mayo Clinic Staff. (2024). *Enlarged heart*. Mayo Clinic.
+**Reference (Foundational):** Cleveland Clinic. (2023). *Cardiomegaly (Enlarged Heart)*. Cleveland Clinic.
+**Reference (Recent):** Weferling, M., et al. (2024). *Pathophysiology of dilated cardiomyopathy: from genetics to inflammation*. Journal of Molecular and Cellular Cardiology.

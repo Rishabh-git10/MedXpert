@@ -1,0 +1,32 @@
+## Overview
+Atelectasis is the collapse or incomplete expansion of all or part of a lung. It is not a disease, but a condition. It occurs when the alveoli (tiny air sacs) within the lung become deflated or fill with fluid. This is one of the most common respiratory complications, particularly after surgery. The collapse reduces the surface area available for gas exchange, which can lead to hypoxemia (low blood oxygen levels).
+
+## Diagnosis and Causes
+**Radiographic (X-ray) Findings:**
+Atelectasis is a key finding on a chest X-ray.
+* **Direct Signs:** The most direct sign is the displacement of lung fissures (the lines separating the lobes).
+* **Indirect Signs:** It often presents as a linear, wedge-shaped, or patchy opacity (whiteness) in the affected lung zone. Because the lung has lost volume, it pulls nearby structures *towards* it. This can include the trachea, the heart (mediastinum), or the diaphragm (which will appear elevated on the affected side).
+
+**Types and Causes:**
+1.  **Obstructive Atelectasis:** This is the most common type and is caused by a blockage in an airway (a bronchus). Air trapped beyond the blockage gets absorbed by the blood, and the alveoli collapse.
+    * **Causes:** A mucus plug (especially post-operatively), a foreign body, or a tumor inside the airway.
+2.  **Non-Obstructive (Compressive) Atelectasis:** This occurs when something *outside* the lung pushes on it and causes it to collapse.
+    * **Causes:** A large pleural effusion (fluid) or a pneumothorax (air) in the pleural space. The lung itself is healthy but is being compressed.
+3.  **Postoperative Atelectasis:** Extremely common after abdominal or chest surgery. It is caused by a combination of factors:
+    * Anesthesia effects on the lungs.
+    * Shallow breathing (hypoventilation) due to pain from the incision.
+    * Inability to cough effectively, leading to retained mucus plugs.
+
+## Standard Management
+The primary goal is to re-expand the collapsed lung tissue and treat the underlying cause.
+* **Chest Physiotherapy:** This is the first-line treatment. It includes:
+    * **Deep Breathing Exercises & Incentive Spirometry:** Encourages the patient to take deep breaths to pop open the collapsed alveoli.
+    * **Coughing:** Mobilizes and clears mucus plugs.
+    * **Postural Drainage and Percussion:** Using gravity and "clapping" on the back to loosen secretions.
+* **Bronchoscopy:** If the atelectasis is caused by a large, stubborn mucus plug or a foreign body that cannot be coughed up, a flexible camera (bronchoscope) is inserted into the airway to directly suction out the blockage.
+* **Addressing the Cause:** If the cause is compressive (like a large pleural effusion), a thoracentesis (needle drainage) or chest tube is required to remove the fluid/air, allowing the lung to re-expand.
+
+## Recent Research (2023-2024)
+Modern management heavily focuses on **prevention**, especially in the perioperative setting.
+* **Intraoperative:** The 2024 *Critical Care* review on perioperative lung protection emphasizes "lung-protective ventilation" (using low tidal volumes and appropriate PEEP) *during* surgery to prevent the initial alveolar collapse from ever happening.
+* **Postoperative:** The 2023 *JAMA* study and subsequent guidelines have highlighted the significant benefit of **High-Flow Nasal Cannula (HFNC) oxygen therapy** for patients after surgery. HFNC is more effective and comfortable than traditional oxygen masks because it provides warm, humidified air *and* a low level of continuous positive airway pressure (PEEP). This "splints" the airways open and helps re-inflate collapsed lung tissue, significantly reducing postoperative pulmonary complications, including atelectasis.
