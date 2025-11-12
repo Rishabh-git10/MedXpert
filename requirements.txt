@@ -20,4 +20,4 @@ langgraph>=0.1.0
 torchcam>=0.3.1
 transformers>=4.36.0
 playwright>=1.48.0
-streamlit-testing>=0.2.0
+streamlit>=1.26.0
