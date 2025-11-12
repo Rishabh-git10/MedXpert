@@ -1,0 +1,31 @@
+
+services:
+  # The FastAPI Backend
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: medxpert-api
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./models:/app/models
+      - ./chroma_db:/app/chroma_db
+      - ./knowledge_base:/app/knowledge_base
+    restart: unless-stopped
+
+  # The Streamlit Frontend
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.app
+    container_name: medxpert-app
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped

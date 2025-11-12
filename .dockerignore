@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.pytest_cache/
+htmlcov/
+.vscode/
+.idea/
+.git/
+docs/
+notebooks/
+data/raw/
+data/processed/
+backup_*/
+*.log
