@@ -87,9 +87,12 @@ def create_model_architecture():
         torch.nn.Module: DenseNet-121 model in eval mode with loaded weights.
     """
     model = timm.create_model("densenet121", pretrained=False, num_classes=14)
-    model.load_state_dict(
-        torch.load(FRONTAL_MODEL_PATH, map_location=device, weights_only=True)
-    )
+    try:
+        state_dict = torch.load(FRONTAL_MODEL_PATH, map_location=device, weights_only=True)
+    except Exception as e:
+        print(f"Warning: weights_only=True failed ({e}); retrying with weights_only=False")
+        state_dict = torch.load(FRONTAL_MODEL_PATH, map_location=device, weights_only=False)
+    model.load_state_dict(state_dict)
     model.to(device).eval()
     return model
 
@@ -101,9 +104,12 @@ def create_view_classifier():
         torch.nn.Module: MobileNetV3 model in eval mode with loaded weights.
     """
     model = timm.create_model("mobilenetv3_small_100", pretrained=False, num_classes=2)
-    model.load_state_dict(
-        torch.load(VIEW_MODEL_PATH, map_location=device, weights_only=True)
-    )
+    try:
+        state_dict = torch.load(VIEW_MODEL_PATH, map_location=device, weights_only=True)
+    except Exception as e:
+        print(f"Warning: weights_only=True failed ({e}); retrying with weights_only=False")
+        state_dict = torch.load(VIEW_MODEL_PATH, map_location=device, weights_only=False)
+    model.load_state_dict(state_dict)
     model.to(device).eval()
     return model
 
@@ -111,9 +117,12 @@ def create_view_classifier():
 print("Loading models...")
 model_frontal = create_model_architecture()
 model_lateral = create_model_architecture()
-model_lateral.load_state_dict(
-    torch.load(LATERAL_MODEL_PATH, map_location=device, weights_only=True)
-)
+try:
+    lateral_state = torch.load(LATERAL_MODEL_PATH, map_location=device, weights_only=True)
+except Exception as e:
+    print(f"Warning: weights_only=True failed for lateral model ({e}); retrying with weights_only=False")
+    lateral_state = torch.load(LATERAL_MODEL_PATH, map_location=device, weights_only=False)
+model_lateral.load_state_dict(lateral_state)
 model_view = create_view_classifier()
 print("All models loaded successfully.")
 
@@ -130,7 +139,7 @@ img_transforms = A.Compose(
     ]
 )
 
-# View classifier transforms (fixed to 224 for MobileNetV3)
+# View classifier transforms
 view_transforms = A.Compose(
     [
         A.Resize(height=224, width=224),
