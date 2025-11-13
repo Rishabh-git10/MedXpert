@@ -11,15 +11,14 @@ from streamlit.testing.v1 import AppTest
 @pytest.mark.ui
 class TestStreamlitEdgeCases:
     """Tests for resilience and graceful error handling in the Streamlit UI."""
-
     def test_no_upload_no_crash(self):
-        """Ensure the app runs cleanly when no file is uploaded."""
+        """App should run gracefully without any uploaded file."""
         app = AppTest.from_file("src/app.py")
         app.run(timeout=30)
         assert len(app.exception) == 0
 
     def test_missing_summary_key(self):
-        """Verify missing summary entries do not cause UI failures."""
+        """Ensure missing summary entries don't crash the UI."""
         app = AppTest.from_file("src/app.py")
         app.run()
 

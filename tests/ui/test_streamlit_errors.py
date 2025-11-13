@@ -13,7 +13,7 @@ class TestStreamlitErrors:
     """Tests for robustness of Streamlit UI under invalid or missing data."""
 
     def test_empty_findings_handling(self):
-        """Ensure empty findings do not cause application errors."""
+        """Test handling of empty findings list."""
         app = AppTest.from_file("src/app.py")
         app.run()
 
@@ -23,7 +23,7 @@ class TestStreamlitErrors:
         assert len(app.exception) == 0
 
     def test_missing_heatmaps(self):
-        """Verify that empty heatmap data does not raise exceptions."""
+        """Test handling when heatmaps dictionary is empty."""
         app = AppTest.from_file("src/app.py")
         app.run()
 

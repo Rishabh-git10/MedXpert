@@ -5,6 +5,7 @@ acceptable limits across updates.
 """
 
 import time
+
 import pytest
 from streamlit.testing.v1 import AppTest
 
@@ -15,7 +16,7 @@ class TestStreamlitPerformance:
     """Tests for Streamlit UI rendering speed and stability."""
 
     def test_app_renders_under_threshold(self):
-        """Verify initial app load completes within two seconds."""
+        """Ensure initial load completes under 2 seconds."""
         start = time.time()
         app = AppTest.from_file("src/app.py")
         app.run(timeout=30)

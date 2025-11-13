@@ -19,10 +19,10 @@ class TestModelCreation:
     @patch("src.api.torch.load")
     def test_create_densenet(self, mock_load, mock_create):
         """Initialize DenseNet-121 with correct parameters and eval mode."""
-        model = MagicMock()
-        model.eval = MagicMock(return_value=model)
-        model.to = MagicMock(return_value=model)
-        mock_create.return_value = model
+        m = MagicMock()
+        m.eval = MagicMock(return_value=m)
+        m.to = MagicMock(return_value=m)
+        mock_create.return_value = m
         mock_load.return_value = {}
 
         create_model_architecture()
@@ -30,17 +30,17 @@ class TestModelCreation:
         mock_create.assert_called_once_with(
             "densenet121", pretrained=False, num_classes=14
         )
-        model.eval.assert_called_once()
-        model.to.assert_called()
+        m.eval.assert_called_once()
+        m.to.assert_called()
 
     @patch("src.api.timm.create_model")
     @patch("src.api.torch.load")
     def test_create_mobilenet_view(self, mock_load, mock_create):
         """Initialize MobileNetV3 view classifier with correct configuration."""
-        model = MagicMock()
-        model.eval = MagicMock(return_value=model)
-        model.to = MagicMock(return_value=model)
-        mock_create.return_value = model
+        m = MagicMock()
+        m.eval = MagicMock(return_value=m)
+        m.to = MagicMock(return_value=m)
+        mock_create.return_value = m
         mock_load.return_value = {}
 
         create_view_classifier()
@@ -48,5 +48,5 @@ class TestModelCreation:
         mock_create.assert_called_once_with(
             "mobilenetv3_small_100", pretrained=False, num_classes=2
         )
-        model.eval.assert_called_once()
-        model.to.assert_called()
+        m.eval.assert_called_once()
+        m.to.assert_called()

@@ -17,7 +17,7 @@ class TestStreamlitVisuals:
     """Tests for visual data handling and session persistence."""
 
     def test_heatmap_storage(self):
-        """Verify that Grad-CAM heatmaps are stored correctly in session state."""
+        """Test that heatmaps are stored in session state."""
         img = Image.new("RGB", (32, 32), color="gray")
         buf = BytesIO()
         img.save(buf, format="PNG")
@@ -34,7 +34,7 @@ class TestStreamlitVisuals:
         assert len(app.exception) == 0
 
     def test_original_image_storage(self):
-        """Ensure that the uploaded image is stored and accessible."""
+        """Test that original image is stored."""
         img = Image.new("RGB", (128, 128), color="gray")
 
         app = AppTest.from_file("src/app.py")

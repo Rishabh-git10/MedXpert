@@ -19,7 +19,7 @@ def test_core_imports():
 
 @pytest.mark.smoke
 def test_fastapi_app_loads():
-    """Check that the FastAPI application initializes correctly."""
+    """Check FastAPI app initializes correctly."""
     from src.api import app
 
     assert hasattr(app, "router")
@@ -27,7 +27,7 @@ def test_fastapi_app_loads():
 
 @pytest.mark.smoke
 def test_streamlit_script_loads():
-    """Ensure the Streamlit app script exists and references Streamlit calls."""
+    """Ensure Streamlit app script can be read and contains Streamlit calls."""
     path = "src/app.py"
     assert os.path.exists(path), f"{path} not found"
     with open(path, "r", encoding="utf-8") as f:
@@ -37,5 +37,5 @@ def test_streamlit_script_loads():
 
 @pytest.mark.smoke
 def test_environment_ready():
-    """Confirm that essential environment variables for test mode are active."""
+    """Confirm essential environment variables for test mode are active."""
     assert os.getenv("STREAMLIT_TEST_MODE") == "true"

@@ -16,7 +16,6 @@ from src.api import app, pathology_cols
 @pytest.mark.api
 class TestSummaryEndpoint:
     """Integration tests for the /get_summary/ FastAPI route."""
-
     def test_get_summary_success(self, mock_llm_chain):
         """Return 200 OK and valid summary for a known pathology."""
         client = TestClient(app)
@@ -28,14 +27,14 @@ class TestSummaryEndpoint:
         """Ensure all known pathologies return valid summaries."""
         client = TestClient(app)
         for p in pathology_cols:
-            resp = client.post("/get_summary/", json={"pathology": p})
-            assert resp.status_code == 200
+            assert (
+                client.post("/get_summary/", json={"pathology": p}).status_code == 200
+            )
 
     def test_missing_field(self):
         """Return 422 when pathology field is missing."""
         client = TestClient(app)
-        resp = client.post("/get_summary/", json={})
-        assert resp.status_code == 422
+        assert client.post("/get_summary/", json={}).status_code == 422
 
     def test_invalid_json(self):
         """Reject invalid JSON payloads."""
@@ -50,23 +49,27 @@ class TestSummaryEndpoint:
     def test_unknown_pathology(self, mock_llm_chain):
         """Handle unknown or unrecognized pathology names gracefully."""
         client = TestClient(app)
-        resp = client.post("/get_summary/", json={"pathology": "Unknown Disease XYZ"})
-        assert resp.status_code == 200
+        assert (
+            client.post(
+                "/get_summary/", json={"pathology": "Unknown Disease XYZ"}
+            ).status_code
+            == 200
+        )
 
     def test_empty_pathology(self, mock_llm_chain):
         """Handle empty pathology values without failure."""
         client = TestClient(app)
-        resp = client.post("/get_summary/", json={"pathology": ""})
-        assert resp.status_code == 200
+        assert client.post("/get_summary/", json={"pathology": ""}).status_code == 200
 
     def test_llm_failure(self):
         """Simulate and handle LLM/QA chain execution failures."""
         client = TestClient(app)
+
         with patch.object(
             RunnableSequence, "invoke", side_effect=Exception("LLM Error")
         ):
-            resp = client.post("/get_summary/", json={"pathology": "Pneumonia"})
-            assert resp.status_code == 500
-            data = resp.json()
+            response = client.post("/get_summary/", json={"pathology": "Pneumonia"})
+            assert response.status_code == 500
+            data = response.json()
             assert "error" in data
             assert "LLM Error" in data["error"]

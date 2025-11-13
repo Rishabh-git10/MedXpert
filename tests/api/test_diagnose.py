@@ -19,9 +19,8 @@ from src.api import app
 @pytest.mark.api
 class TestDiagnoseEndpoint:
     """Integration tests for the /diagnose/ FastAPI route."""
-
     def test_diagnose_with_valid_image(self, sample_xray_file):
-        """Return 200 OK and structured findings for a valid JPEG image."""
+        """Return 200 OK and structured findings for a valid JPEG image."""    
         client = TestClient(app)
         resp = client.post(
             "/diagnose/", files={"file": ("test.jpg", sample_xray_file, "image/jpeg")}

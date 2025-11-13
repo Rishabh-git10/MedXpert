@@ -13,7 +13,7 @@ class TestStreamlitSummary:
     """Tests for session state storage and handling of clinical summaries."""
 
     def test_summary_storage(self):
-        """Verify a single summary is stored and retrieved correctly."""
+        """Test that summaries are stored correctly."""
         app = AppTest.from_file("src/app.py")
         app.run()
 
@@ -21,14 +21,16 @@ class TestStreamlitSummary:
         app.session_state["summaries"] = {}
         app.run()
 
-        app.session_state["summaries"]["Pneumonia"] = "Clinical information about pneumonia"
+        app.session_state["summaries"][
+            "Pneumonia"
+        ] = "Clinical information about pneumonia"
         app.run()
 
         assert "Pneumonia" in app.session_state["summaries"]
         assert len(app.exception) == 0
 
     def test_multiple_summaries(self):
-        """Ensure multiple pathology summaries are handled correctly."""
+        """Test handling of multiple pathology summaries."""
         app = AppTest.from_file("src/app.py")
         app.run()
 

@@ -15,7 +15,7 @@ pytestmark = pytest.mark.ui
 
 
 class MockUploadedFile:
-    """Mock Streamlit UploadedFile compatible with PIL.Image.open()."""
+    """Mock Streamlit UploadedFile that works with PIL.Image.open()"""
 
     def __init__(self, file_bytes, filename="sample.jpg"):
         self.name = filename
@@ -44,7 +44,7 @@ class MockUploadedFile:
 
 
 class MockResponse:
-    """Minimal mock of requests.Response for test isolation."""
+    """Helper class to mock requests.Response"""
 
     def __init__(self, json_data, status_code, text_data=None):
         self.json_data = json_data
@@ -57,7 +57,7 @@ class MockResponse:
 
 @pytest.fixture(scope="function")
 def app():
-    """Initialize Streamlit app with patched uploader to avoid blocking."""
+    """Load the app. Patch file_uploader to return None during initial load."""
     with patch("streamlit.file_uploader", return_value=None):
         app_test = AppTest.from_file("src/app.py")
         app_test.run()
@@ -65,24 +65,32 @@ def app():
 
 
 class TestStreamlitUserFlow:
-    """Simulates interactive user flows through the Streamlit interface."""
+    """Simulates Streamlit UI user interactions with proper state changes."""
 
     @patch("requests.post")
     def test_run_diagnosis_button_triggers_analysis(
-        self, mock_post, app, sample_xray_bytes, mock_api_response_success
+        self,
+        mock_post,
+        app,
+        sample_xray_bytes,
+        mock_api_response_success,
     ):
-        """Verify that clicking 'Run Diagnosis' triggers inference and updates session."""
+        """Ensure Run Diagnosis triggers inference and populates session state."""
         mock_post.return_value = MockResponse(mock_api_response_success, 200)
+
         mock_file = MockUploadedFile(sample_xray_bytes, "sample_xray.jpg")
 
         with patch("streamlit.file_uploader", return_value=mock_file):
             app.run()
+
             run_buttons = [b for b in app.button if "Run Diagnosis" in b.label]
-            assert run_buttons, "Run Diagnosis button not found"
+            assert run_buttons, "Run Diagnosis button not found after file upload"
+
             run_buttons[0].click()
             app.run()
 
-        assert app.session_state.findings
+        assert app.session_state.findings is not None
+        assert len(app.session_state.findings) > 0
         assert app.session_state.findings[0]["name"] == "Pneumonia"
 
         all_markdown = " ".join(m.value for m in app.markdown)
@@ -91,59 +99,77 @@ class TestStreamlitUserFlow:
 
     @patch("requests.post")
     def test_api_failure_shows_error_message(self, mock_post, app, sample_xray_bytes):
-        """Ensure API failures surface user-friendly error messages."""
+        """Ensure app gracefully handles an API failure."""
         mock_post.return_value = MockResponse({}, 500, text_data="This is a test error")
+
         mock_file = MockUploadedFile(sample_xray_bytes, "sample.jpg")
 
         with patch("streamlit.file_uploader", return_value=mock_file):
             app.run()
             run_buttons = [b for b in app.button if "Run Diagnosis" in b.label]
-            assert run_buttons
+            assert run_buttons, "Run Diagnosis button not found"
+
             run_buttons[0].click()
             app.run()
 
         assert len(app.error) > 0
-        assert "This is a test error" in " ".join(e.value for e in app.error)
+        error_text = " ".join(e.value for e in app.error)
+        assert "This is a test error" in error_text
 
     @patch("requests.post")
     def test_summary_load_button_fetches_summary(
-        self, mock_post, app, sample_xray_bytes, mock_api_response_success
+        self,
+        mock_post,
+        app,
+        sample_xray_bytes,
+        mock_api_response_success,
     ):
-        """Simulate full workflow: Diagnose → Load Summary → Verify display."""
+        """Test the full flow: Diagnose -> Click 'Load Summary' -> See summary."""
         mock_diagnose_response = MockResponse(mock_api_response_success, 200)
         mock_summary_response = MockResponse(
             {"summary": "This is the mocked Pneumonia summary."}, 200
         )
+
         mock_post.side_effect = [mock_diagnose_response, mock_summary_response]
+
         mock_file = MockUploadedFile(sample_xray_bytes, "sample.jpg")
 
         with patch("streamlit.file_uploader", return_value=mock_file):
             app.run()
+
             run_buttons = [b for b in app.button if "Run Diagnosis" in b.label]
+            assert run_buttons, "Run Diagnosis button not found"
             run_buttons[0].click()
             app.run()
+
             summary_buttons = [
                 b for b in app.button if "Load Summary for Pneumonia" in b.label
             ]
+            assert summary_buttons, "Summary button for Pneumonia not found"
             summary_buttons[0].click()
             app.run()
 
         assert "Pneumonia" in app.session_state.summaries
-        summary_text = app.session_state.summaries["Pneumonia"]
-        assert "mocked Pneumonia summary" in summary_text
-        assert "mocked Pneumonia summary" in " ".join(m.value for m in app.markdown)
+        assert (
+            "This is the mocked Pneumonia summary."
+            in app.session_state.summaries["Pneumonia"]
+        )
+        all_markdown = " ".join(m.value for m in app.markdown)
+        assert "This is the mocked Pneumonia summary." in all_markdown
 
     @patch("requests.post")
     def test_no_finding_result_shows_normal_message(
         self, mock_post, app, sample_xray_bytes, mock_api_response_normal
     ):
-        """Validate 'No Finding' case renders correct normal message."""
+        """Simulate a 'No Finding' case and check for the normal message."""
         mock_post.return_value = MockResponse(mock_api_response_normal, 200)
+
         mock_file = MockUploadedFile(sample_xray_bytes, "sample.jpg")
 
         with patch("streamlit.file_uploader", return_value=mock_file):
             app.run()
             run_buttons = [b for b in app.button if "Run Diagnosis" in b.label]
+            assert run_buttons, "Run Diagnosis button not found"
             run_buttons[0].click()
             app.run()
 
@@ -153,24 +179,34 @@ class TestStreamlitUserFlow:
 
     @patch("requests.post")
     def test_summary_api_error_graceful_handling(
-        self, mock_post, app, sample_xray_bytes, mock_api_response_success
+        self,
+        mock_post,
+        app,
+        sample_xray_bytes,
+        mock_api_response_success,
     ):
-        """Ensure summary API errors are caught and displayed gracefully."""
+        """Ensure summary errors are handled gracefully in the expander."""
         mock_diagnose_response = MockResponse(mock_api_response_success, 200)
         mock_summary_response = MockResponse({}, 500, text_data="LLM summary failed")
         mock_post.side_effect = [mock_diagnose_response, mock_summary_response]
+
         mock_file = MockUploadedFile(sample_xray_bytes, "sample.jpg")
 
         with patch("streamlit.file_uploader", return_value=mock_file):
             app.run()
+
             run_buttons = [b for b in app.button if "Run Diagnosis" in b.label]
+            assert run_buttons, "Run Diagnosis button not found"
             run_buttons[0].click()
             app.run()
+
             summary_buttons = [
                 b for b in app.button if "Load Summary for Pneumonia" in b.label
             ]
+            assert summary_buttons, "Summary button for Pneumonia not found"
             summary_buttons[0].click()
             app.run()
 
         assert len(app.error) > 0
-        assert "LLM summary failed" in " ".join(e.value for e in app.error)
+        error_text = " ".join(e.value for e in app.error)
+        assert "LLM summary failed" in error_text

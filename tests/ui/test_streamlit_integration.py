@@ -14,7 +14,7 @@ class TestStreamlitIntegration:
     """Tests the end-to-end frontend workflow for diagnosis and summaries."""
 
     def test_findings_to_summary_flow(self):
-        """Verify that findings correctly propagate into the summary display."""
+        """Test the flow from findings to summary display."""
         app = AppTest.from_file("src/app.py")
         app.run()
 

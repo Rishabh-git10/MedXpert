@@ -12,11 +12,9 @@ from streamlit.testing.v1 import AppTest
 
 @pytest.mark.ui
 class TestStreamlitAPI:
-    """Tests for session state behavior and API interaction in Streamlit UI."""
-
     @patch("src.app.requests")
     def test_diagnose_session_state_update(self, mock_requests):
-        """Verify that diagnosis results update Streamlit session state."""
+        """Test that diagnosis updates session state correctly."""
         app = AppTest.from_file("src/app.py")
         app.run()
 
@@ -30,7 +28,7 @@ class TestStreamlitAPI:
         assert app.session_state["findings"][0]["probability"] == 0.93
 
     def test_summary_caching_logic(self):
-        """Ensure clinical summaries are cached and persisted between runs."""
+        """Test that summaries are cached in session state."""
         app = AppTest.from_file("src/app.py")
         app.run()
 
