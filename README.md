@@ -3,10 +3,10 @@
 ![Project Status: Complete](https://img.shields.io/badge/status-complete-green)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org "Python 3.11")
 [![Tests: 114 Total (100% pass rate)](https://img.shields.io/badge/Tests-113%2F114%20Passed-brightgreen.svg)](https://docs.pytest.org "Pytest")
-[![Coverage 97% (API)](https://img.shields.io/badge/Coverage-96%25%20(API)-green.svg)](https://coverage.readthedocs.io "Coverage")
+[![Coverage 97% (API)](https://img.shields.io/badge/Coverage-97%25%20(API)-green.svg)](https://coverage.readthedocs.io "Coverage")
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue.svg?logo=docker&logoColor=white)](https://www.docker.com "Docker")
 
-MedXpert is a full-stack, end-to-end medical imaging system that performs real medical reasoning, not just simple classification.
+MedXpert is a full-stack, end-to-end medical imaging system that performs real medical reasoning.
 
 It performs a complete diagnostic workflow:
 - **Automatically classifies** X-ray view (Frontal or Lateral)
@@ -126,7 +126,6 @@ This is the recommended method for testing and iterating.
 
 ### 2\. Run with Docker (Production-Ready)
 
-This is the "MLOps" method. It builds and runs the entire application in isolated containers.
 
 **Prerequisites:**
 
@@ -135,7 +134,7 @@ This is the "MLOps" method. It builds and runs the entire application in isolate
 
 
 1.  **Build the Containers:**
-    (This will take 10-20 minutes the first time as it downloads PyTorch)
+    
 
     ```bash
     docker-compose build
@@ -163,7 +162,7 @@ This is the "MLOps" method. It builds and runs the entire application in isolate
 
 ## ✅ Running the Test Suite
 
-This project is built with a focus on quality, achieving **96% test coverage** on the critical API logic and a **99.1% (113/114) pass rate**.
+This project is built with a focus on quality, achieving **97% test coverage** on the critical API logic and a **100% (114/114) pass rate**.
 
 1.  Activate your environment:
     ```bash
@@ -179,7 +178,7 @@ This project is built with a focus on quality, achieving **96% test coverage** o
 
 ## 👤 Author & Contact
 
-**[Rishabh Dewangan]**
+**Rishabh Dewangan**
 
   * **Email:** `rishabhcicdu@gmail.com`
 
